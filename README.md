@@ -23,6 +23,8 @@ Sando Mur: Cofounder and Mathematician
 
 
 Secondary Stakeholders: 
+
+
 Bellabeat marketing analytics team
 
 ## PREPARE
@@ -44,9 +46,13 @@ Limitations of Data Set:
 Information of ROCCC?
 
 Reliable -LOW- Not reliable because it is only has 30 answering
+
 Original -LOW- Third party provider
+
 Comprehensive - MED- Parameters match most of Bellabeat products’ parameters
+
 Current — LOW — Data is 5 years old and may not be relevant
+
 Cited — LOW — Data collected from third party, hence unknown
 
 
