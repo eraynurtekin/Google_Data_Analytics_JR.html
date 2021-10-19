@@ -45,11 +45,11 @@ Limitations of Data Set:
 
 Information of ROCCC?
 
-Reliable -LOW- Not reliable because it is only has 30 answering
+Reliable — LOW — Not reliable because it is only has 30 answering
 
-Original -LOW- Third party provider
+Original  — LOW — Third party provider
 
-Comprehensive - MED- Parameters match most of Bellabeat products’ parameters
+Comprehensive — MED — Parameters match most of Bellabeat products’ parameters
 
 Current — LOW — Data is 5 years old and may not be relevant
 
@@ -60,6 +60,7 @@ Cited — LOW — Data collected from third party, hence unknown
 I will not dive deep into the details in datasets based on hourly, minutes, and seconds to limit the scope of analysis
 I will not use weightlog since only 8 IDs registered weight, while there are 33 IDs in total
 dailyActivity_merged.csv is already merged versions of several other datasets
+
 
 #Loading Packages and libraries
 ```{r}
