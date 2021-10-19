@@ -1,6 +1,4 @@
-# file-C-Users-PC-Desktop-R-Google_Data_Analytics_JR.html
-Google Data Analytics (JR) Case Study
-
+---
 title: "Google Data Analyst Case Study (JR)"
 author: "Eray Nurtekin"
 date: "19 10 2021"
@@ -151,6 +149,7 @@ daily_activity %>%
   geom_smooth(method = "lm", formula=y~x) + 
   labs(title="TotalSteps vs Calories")
 ```
+![smooth1](https://user-images.githubusercontent.com/79145084/137901802-a8d2d1ca-1352-4085-bd86-a5b6b8cd83b2.png)
 
 From our plot, we see that again there is a positive correlation between total distance and calories, this can be used for Bellabeat strategies. 
 ```{r}
@@ -160,6 +159,7 @@ daily_activity %>%
   labs(title="TotalDistance vs Calories")
 ```
 
+![smooth2](https://user-images.githubusercontent.com/79145084/137901811-13a888f7-c602-49b5-9e5f-be99a909c6f4.png)
 
 
 Noted a few outliers :
@@ -179,7 +179,8 @@ active_users <- daily_activity %>%
   fairly_percentage <- sum(daily_activity$FairlyActiveMinutes)/total_minutes*100
   active_percentage <- sum(daily_activity$VeryActiveMinutes)/total_minutes*100
   
-  
+ 
+
   percentage <- data.frame(
     level=c("Sedentary", "Lightly", "Fairly", "Very Active"),
     minutes=c(sedentary_percentage,lightly_percentage,fairly_percentage,active_percentage))
@@ -187,8 +188,9 @@ active_users <- daily_activity %>%
     layout(title = 'Percentage of Activity in Minutes',
            xaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE),
            yaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE))
+           
 ```
-
+![pie](https://user-images.githubusercontent.com/79145084/137901527-6fbf8773-d645-45b7-ad25-49a9b29343c8.png)
 
 This indicates that users are using the FitBit app to log daily activities such as daily commute, inactive movements (moving from one spot to another) or running errands.
 App is rarely being used to track fitness (ie. running) as per the minor percentage of fairly active activity (1.24%) and very active activity (1.93%). This is highly discouraging as FitBit app was developed to encourage fitness.
